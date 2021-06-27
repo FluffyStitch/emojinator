@@ -5,6 +5,6 @@ require_relative 'emojinator/constants'
 
 module Emojinator
   def self.call(string)
-    string.gsub(/(#{Constants::SWEAR_WORDS.join('|')})/i, Constants::EMOJI.sample)
+    string.gsub(/(#{Constants::SWEAR_WORDS.join('|')})/i) { |_| Constants::EMOJI.sample }
   end
 end

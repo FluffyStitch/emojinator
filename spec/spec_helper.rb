@@ -2,6 +2,7 @@
 
 require 'bundler/setup'
 require 'emojinator'
+require 'ffaker'
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
